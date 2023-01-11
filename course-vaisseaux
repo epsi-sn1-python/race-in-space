@@ -1,1 +1,8 @@
-#test
+class track():
+    def __init__(distance):
+        distance
+    
+class spaceship():
+    def __init__(vitesse,nom):
+        vitesse
+        nom
