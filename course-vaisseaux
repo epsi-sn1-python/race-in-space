@@ -7,7 +7,7 @@ class Track():
     def startRace(self):
         print(self._all_SS)
     def WhoWin(self):
-        pass
+        print(max(Track.startRace()))
 
 class SpaceShip():
     def __init__(self,vitesse,nom):
@@ -32,3 +32,4 @@ track1.addSpaceShip(SpaceShip4)
 track1.addSpaceShip(SpaceShip5)
 
 print(track1.startRace())
+print(track1.WhoWin())
