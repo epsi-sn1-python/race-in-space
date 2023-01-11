@@ -1,10 +1,11 @@
 class Track():
     def __init__(self,taille):
         self._taille=taille
+        self._all_SS=[]
     def addSpaceShip(self,Space_Ship):
-        pass
+        self._all_SS.append(Space_Ship)
     def startRace(self):
-        pass
+        print(self._all_SS)
     def WhoWin(self):
         pass
 
@@ -12,6 +13,7 @@ class SpaceShip():
     def __init__(self,vitesse,nom):
         self._nom=nom
         self._vitesse=vitesse
+    
     
 
 
@@ -24,5 +26,9 @@ SpaceShip4=SpaceShip(7,"SpaceS4")
 SpaceShip5=SpaceShip(3,"SpaceS5")
 
 track1.addSpaceShip(SpaceShip1)
-track1.startRace()
-print(track1.WhoWin())
+track1.addSpaceShip(SpaceShip2)
+track1.addSpaceShip(SpaceShip3)
+track1.addSpaceShip(SpaceShip4)
+track1.addSpaceShip(SpaceShip5)
+
+print(track1.startRace())
